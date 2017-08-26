@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/readbottom"
+            android:icon="@drawable/ic_group_work_black_24dp"
+            android:title="@string/read"
+            android:checked="true"
+            />
+        <item
+            android:id="@+id/movie2bottom"
+            android:icon="@drawable/ic_cloud_circle_black_24dp"
+            android:title="@string/jumovie"
+            />
+        <item
+            android:id="@+id/meizitubottom"
+            android:icon="@drawable/ic_explore_red_24dp"
+            android:title="@string/meizitu"
+            />
+        <item
+            android:id="@+id/kaifabottom"
+            android:icon="@drawable/ic_loupe_black_24dp"
+            android:title="@string/kaifazhe"
+            />
+    </group>
+
+    <item android:title="网站收藏">
+        <menu>
+            <item
+                android:id="@+id/kaifadaohangbottom"
+                android:icon="@drawable/ic_lightbulb_outline_red_24dp"
+                android:title="开发导航"
+                />
+            <item
+                android:id="@+id/nav_searchmusic"
+                android:icon="@drawable/ic_queue_music_black_24dp"
+                android:title="音乐搜索" />
+            <item
+                android:id="@+id/nav_doubiekan"
+                android:icon="@drawable/ic_slow_motion_video_black_24dp"
+                android:title="逗别看电影"
+                />
+            <item
+                android:id="@+id/nav_qqfm"
+                android:icon="@drawable/ic_library_music_black_24dp"
+                android:title="企鹅点歌台" />
+        </menu>
+    </item>
+</menu>

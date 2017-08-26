@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hdy.goldhe">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden"
+            android:theme="@style/SplashTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_moviedetail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".webActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SettingsActivity" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5985a8c5aed1796dd100071d" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="share" />
+
+        <activity android:name=".pictureActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        android:title="搜你想要的"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_picture"
+        android:orderInCategory="100"
+        android:title="自动无图"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_setting"
+        android:orderInCategory="101"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_brightness_5_black_24dp"
+        android:title="@string/systemsetting"
+        />
+</menu>

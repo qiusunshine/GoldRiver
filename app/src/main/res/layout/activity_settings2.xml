@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.leon.lib.settingview.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_two"
+        leon:leftText="@string/joinqq"
+        leon:isShowUnderLine="true"
+        leon:leftIcon="@drawable/ic_group_24dp"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftText="@string/tuijian"
+        leon:isShowUnderLine="false"
+        leon:leftIcon="@drawable/ic_group_work_24dp"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_huancun"
+        leon:leftText="@string/clearcahe"
+        android:layout_marginTop="20dp"
+        leon:isShowRightText="true"
+        leon:isShowUnderLine="true"
+        leon:rightText="0.0Byte"
+        leon:leftIcon="@drawable/ic_view_quilt_24dp"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_banben"
+        leon:isShowUnderLine="false"
+        leon:isShowRightText="true"
+        leon:leftText="@string/checkupdate"
+        leon:rightText="@string/VersionCode"
+        leon:leftIcon="@drawable/ic_swap_vertical_circle_24dp"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_about"
+        android:layout_marginTop="20dp"
+        leon:isShowUnderLine="false"
+        leon:leftText="@string/about"
+        leon:leftIcon="@drawable/ic_about"/>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

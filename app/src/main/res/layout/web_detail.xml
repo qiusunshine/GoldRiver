@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@color/white">
+	<com.hdy.goldhe.web.NewWebView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/mainWebView3"
+		android:layerType="hardware"
+		android:layout_below="@+id/web3_toolbar"/>
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/web3_toolbar"
+		android:layout_height="42dp"
+		android:layout_width="match_parent"
+		android:background="#00000000"
+		app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+		app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+		android:fitsSystemWindows="true"/>
+	<ProgressBar
+		style="?android:attr/progressBarStyleHorizontal"
+		android:id="@+id/myProgressBar3"
+		android:layout_width="match_parent"
+		android:layout_height="2dip"
+		android:progressDrawable="@drawable/layer"
+		/>
+</RelativeLayout>
+

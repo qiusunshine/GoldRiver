@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="3dp"
+        android:padding="4dp"
+        android:elevation="1dp"
+        android:background="@drawable/radius_layer">
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/douban_ItemImageView"
+        android:src="@drawable/bizhi"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+        android:text="@string/loading"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/douban_ItemTextView"
+        android:layout_alignTop="@+id/douban_ItemImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/douban_ItemTextView2"
+        android:layout_alignStart="@+id/douban_ItemTextView2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/halfblack"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/douban_ItemImageView"
+        android:id="@+id/douban_ItemTextView2"
+        android:layout_below="@+id/douban_ItemTextView"
+        />
+        </RelativeLayout>
+</RelativeLayout>

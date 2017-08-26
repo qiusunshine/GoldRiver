@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@color/grey"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:elevation="1dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/radius_layer"
+>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:text="2017-8-10"
+    android:id="@+id/listviewheader"/>
+</LinearLayout>
+    </LinearLayout>
