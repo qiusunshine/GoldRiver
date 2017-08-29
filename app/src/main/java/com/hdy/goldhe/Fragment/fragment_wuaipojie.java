@@ -17,6 +17,7 @@ import com.android.volley.toolbox.Volley;
 import com.hdy.goldhe.Adapter.WuaipojieAdapter;
 import com.hdy.goldhe.Base.Fragment_Base;
 import com.hdy.goldhe.MainActivity2;
+import com.hdy.goldhe.NewOne.Activity.OneMainActivity;
 import com.hdy.goldhe.R;
 import com.hdy.goldhe.webActivity;
 import com.jingewenku.abrahamcaijin.commonutil.AppToastMgr;
@@ -83,7 +84,7 @@ public class fragment_wuaipojie extends Fragment_Base {
                     Intent intent=new Intent();
                     intent.setClass(getActivity(),webActivity.class);
                     intent.putExtra("url",url);
-                    intent.putExtra("loadpicture",((MainActivity2)getActivity()).Loadpicture());
+                    intent.putExtra("loadpicture",((OneMainActivity)getActivity()).Loadpicture());
                     startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();

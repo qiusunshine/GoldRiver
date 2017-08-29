@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="170dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/grey"
    >
     <RelativeLayout
         android:layout_width="match_parent"
@@ -10,7 +11,7 @@
         android:layout_margin="3dp"
         android:padding="4dp"
         android:elevation="1dp"
-        android:background="@drawable/radius_layer">
+        android:background="@drawable/ripple">
     <ImageView
         android:layout_width="125dp"
         android:layout_height="125dp"

@@ -1,4 +1,4 @@
-package com.hdy.goldhe.Base;
+package com.hdy.goldhe.NewOne.Base;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -15,12 +15,13 @@ import cn.bingoogolapple.swipebacklayout.BGASwipeBackHelper;
  * Created by hdy on 2017/8/12.
  */
 
-    public abstract class  BaseAllActivity extends AppCompatActivity implements BGASwipeBackHelper.Delegate, View.OnClickListener {
+    public abstract class BaseActivityOneMain extends AppCompatActivity implements BGASwipeBackHelper.Delegate, View.OnClickListener {
         protected BGASwipeBackHelper mSwipeBackHelper;
         @Override
         protected void onCreate(@Nullable Bundle savedInstanceState) {
             // 「必须在 Application 的 onCreate 方法中执行 BGASwipeBackManager.getInstance().init(this) 来初始化滑动返回」
             // 在 super.onCreate(savedInstanceState) 之前调用该方法
+            setTheme(R.style.MainAppTheme);
             initSwipeBackFinish();
             super.onCreate(savedInstanceState);
             initView(savedInstanceState);

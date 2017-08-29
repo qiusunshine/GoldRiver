@@ -10,17 +10,17 @@
             />
         <item
             android:id="@+id/movie2bottom"
-            android:icon="@drawable/ic_cloud_circle_black_24dp"
+            android:icon="@drawable/ic_cloud_circle_black_24dp2"
             android:title="@string/jumovie"
             />
         <item
             android:id="@+id/meizitubottom"
-            android:icon="@drawable/ic_explore_red_24dp"
+            android:icon="@drawable/ic_explore_red_24dp2"
             android:title="@string/meizitu"
             />
         <item
             android:id="@+id/kaifabottom"
-            android:icon="@drawable/ic_loupe_black_24dp"
+            android:icon="@drawable/ic_loupe_black_24dp2"
             android:title="@string/kaifazhe"
             />
     </group>

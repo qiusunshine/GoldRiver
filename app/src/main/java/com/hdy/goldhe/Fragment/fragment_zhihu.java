@@ -14,8 +14,6 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -23,19 +21,14 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.hdy.goldhe.Adapter.zhihuadapter;
-import com.hdy.goldhe.MainActivity2;
+import com.hdy.goldhe.NewOne.Activity.OneMainActivity;
 import com.hdy.goldhe.R;
 import com.hdy.goldhe.webActivity;
 import com.jingewenku.abrahamcaijin.commonutil.AppDateMgr;
-import com.jingewenku.abrahamcaijin.commonutil.AppLogMessageMgr;
 import com.jingewenku.abrahamcaijin.commonutil.AppToastMgr;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by hdy on 2017/5/23.
  */
@@ -153,7 +146,7 @@ public class fragment_zhihu extends Fragment {
                     Intent intent=new Intent();
                     intent.setClass(getActivity(),webActivity.class);
                     intent.putExtra("url","http://daily.zhihu.com/story/"+id);
-                    intent.putExtra("loadpicture",((MainActivity2)getActivity()).Loadpicture());
+                    intent.putExtra("loadpicture",((OneMainActivity)getActivity()).Loadpicture());
                     startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -233,7 +226,7 @@ public class fragment_zhihu extends Fragment {
                         }
                     }
                     if(number==1) {
-                            zhihuadapter = new zhihuadapter(getContext(), dataarry, ((MainActivity2) getActivity()).Loadpicture());
+                            zhihuadapter = new zhihuadapter(getContext(), dataarry, ((OneMainActivity) getActivity()).Loadpicture());
                             listView.setAdapter(zhihuadapter);
                     }
                     TextView load=findView(R.id.loadmre_footer);

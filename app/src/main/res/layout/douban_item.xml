@@ -10,7 +10,7 @@
     android:layout_margin="3dp"
     android:elevation="1dp"
     android:padding="7dp"
-    android:background="@drawable/radius_layer"
+    android:background="@drawable/ripple"
 >
     <TextView
         android:id="@+id/douban_title"

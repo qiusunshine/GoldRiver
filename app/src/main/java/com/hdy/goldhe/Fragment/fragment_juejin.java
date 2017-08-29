@@ -23,6 +23,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.hdy.goldhe.Adapter.juejinadapter;
 import com.hdy.goldhe.MainActivity2;
+import com.hdy.goldhe.NewOne.Activity.OneMainActivity;
 import com.hdy.goldhe.R;
 import com.hdy.goldhe.Util.DateUtil;
 import com.hdy.goldhe.webActivity;
@@ -146,7 +147,7 @@ public class fragment_juejin extends Fragment {
                     Intent intent=new Intent();
                     intent.setClass(getActivity(),webActivity.class);
                     intent.putExtra("url",url);
-                    intent.putExtra("loadpicture",((MainActivity2)getActivity()).Loadpicture());
+                    intent.putExtra("loadpicture",((OneMainActivity)getActivity()).Loadpicture());
                     startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();

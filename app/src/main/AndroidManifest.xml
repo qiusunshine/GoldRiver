@@ -17,15 +17,10 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity2"
-            android:label="@string/app_name"
             android:configChanges="keyboardHidden"
+            android:label="@string/app_name"
             android:theme="@style/SplashTheme2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity_search"
@@ -47,7 +42,16 @@
             android:name="UMENG_CHANNEL"
             android:value="share" />
 
-        <activity android:name=".pictureActivity"/>
+        <activity android:name=".pictureActivity" />
+        <activity
+            android:name=".NewOne.Activity.OneMainActivity"
+            android:theme="@style/SplashTheme2">>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -45,7 +45,7 @@ public class SettingsActivity extends BaseActivity {
                 //版本更新
                 Intent intent=new Intent();
                 intent.setClass(SettingsActivity.this,webActivity.class);
-                intent.putExtra("url","http://fir.im/y9vg");
+                intent.putExtra("url","https://qiusunshine.github.io/HdyLove/goldriver/update.html");
                 startActivity(intent);
             }
         });

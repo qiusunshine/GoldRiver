@@ -1,4 +1,4 @@
-package com.hdy.goldhe.Base;
+package com.hdy.goldhe.NewOne.Base;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -7,15 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+
 import com.hdy.goldhe.R;
 import com.umeng.analytics.MobclickAgent;
+
 import cn.bingoogolapple.swipebacklayout.BGASwipeBackHelper;
 
 /**
  * Created by hdy on 2017/8/12.
  */
 
-    public abstract class  BaseAllActivity extends AppCompatActivity implements BGASwipeBackHelper.Delegate, View.OnClickListener {
+    public abstract class BaseActivityOne extends AppCompatActivity implements BGASwipeBackHelper.Delegate, View.OnClickListener {
         protected BGASwipeBackHelper mSwipeBackHelper;
         @Override
         protected void onCreate(@Nullable Bundle savedInstanceState) {

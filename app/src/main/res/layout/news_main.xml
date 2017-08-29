@@ -8,13 +8,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/news_viewpager"
-        android:layout_above="@+id/newstab">
+        android:layout_below="@+id/newstab"
+        >
 
     </android.support.v4.view.ViewPager>
     <android.support.design.widget.TabLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
         app:tabMode="fixed"
         android:id="@+id/newstab"
         app:tabIndicatorColor="@color/colorAccent"
