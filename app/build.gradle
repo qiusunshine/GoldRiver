@@ -10,7 +10,7 @@ android {
         applicationId "com.hdy.goldhe"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 115
+        versionCode 116
         versionName "1.1.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true

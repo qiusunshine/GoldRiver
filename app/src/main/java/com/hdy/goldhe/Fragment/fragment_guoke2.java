@@ -21,7 +21,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.hdy.goldhe.Adapter.guokeadapter;
-import com.hdy.goldhe.MainActivity2;
 import com.hdy.goldhe.NewOne.Activity.OneMainActivity;
 import com.hdy.goldhe.R;
 import com.hdy.goldhe.webActivity;
@@ -212,7 +211,7 @@ public class fragment_guoke2 extends Fragment {
                         }
                     }
                     if(number==0) {
-                            guokeadapter = new guokeadapter(getContext(), dataarry, ((MainActivity2) getActivity()).Loadpicture());
+                            guokeadapter = new guokeadapter(getContext(), dataarry, ((OneMainActivity) getActivity()).Loadpicture());
                             listView.setAdapter(guokeadapter);
                     }
                     TextView load=findView(R.id.loadmre_footer);
